@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(32, 32, 32, 0.744);
+  min-height: 100vh;
+  color: rgba(255, 255, 255, 0.845);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+nav li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 40px;
+}
+
+.header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.header_left_container h2 {
+  font-size: 2.5rem;
+}
+.header_left_container h3 {
+  color: rgba(0, 0, 255, 0.601);
+}
+/* .header_left_container p {
+  place-self: 2;
+} */
+
+.header_right {
+  width: 50%;
+}
+
+.header_right img {
+  width: 100%;
+}
+
+.infos {
+  background: rgb(22, 22, 22);
+  margin: 0 10px 25px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.btn_container {
+  margin-top: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 25px;
+  background: blue;
+  color: whitesmoke;
+  border-radius: 11px;
+  padding: 10px 0;
+  width: 150px;
+  font-weight: bold;
+}
+
+.infos_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+}
+
+.investor {
+  height: 80%;
+}
+.img_investor {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+
+.img_investor img {
+  width: 100px;
+}

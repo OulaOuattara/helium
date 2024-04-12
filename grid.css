@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(31, 30, 30, 0.641);
+  min-height: 100vh;
+  color: rgba(255, 255, 255, 0.845);
+  padding: 20px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-template-rows: 1fr;
+  grid-template-areas:
+    "5g"
+    "explo"
+    "eco"; */
+}
+
+nav li {
+  list-style-type: none;
+}
+
+header {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.header_left {
+  margin-right: 10px;
+}
+
+.header_left_container {
+  padding-top: 10%;
+}
+.header_left_container h2 {
+  padding: 0 0 5px 0;
+  font-size: 3.5rem;
+}
+
+.header_left_container h3 {
+  padding: 0 0 5px 0;
+  font-size: 1.8;
+  color: rgba(0, 0, 255, 0.783);
+}
+
+.header_right img {
+  width: 90%;
+}
+
+.infos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: rgba(0, 0, 0, 0.879);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.infos_left .btn_container {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.btn_container button {
+  width: 155px;
+  margin-top: 10px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 255, 0.783);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.infos_right .investor {
+  margin-top: 10px;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img_investor {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 80%;
+}
+
+.img_investor img {
+  width: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .infos_right {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+  .header_left_container h2 {
+    font-size: 2.5rem;
+  }
+
+  .header_left_container h3 {
+    font-size: 1.3rem;
+  }
+
+  .img_investor img {
+    width: 80px;
+    margin: 10px 0;
+  }
+  .infos_right h3 {
+    margin-top: 15px;
+  }
+  .infos {
+    grid-template-columns: 100%;
+    align-items: center;
+  }
+
+  .infos_left .btn_container {
+    align-items: center;
+  }
+  .infos_left {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .header_right img {
+    margin-top: 15px;
+  }
+
+  nav {
+    grid-template-columns: 30% 70%;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: 22% 37% 41%;
+    align-items: center;
+  }
+  .img_investor {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  nav ul {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+}
